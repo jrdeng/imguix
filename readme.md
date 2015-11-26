@@ -4,13 +4,13 @@
 2. [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui)
 
 
-## issues
-
-1. [imgui can not be drawn when porting to win32](https://github.com/jrdeng/imguix/issues/1)
-
-this is how it suppose to be:
 ![screen](imguix.png)
 
-but actually:
-![imgui_not_drawn](https://cloud.githubusercontent.com/assets/170314/11267473/8b1f5bb6-8ee6-11e5-80f3-a48672d42c9f.png)
+TODO:
+imguix use fixed pipeline on mac and programmable pipline on win32 to render imgui.
+Need to fix it.
 
+detail:
+
+- [Classes/imgui/imgui_impl_glfw_win32.cpp](Classes/imgui/imgui_impl_glfw_win32.cpp)
+- [Classes/imgui/imgui_impl_glfw_mac.cpp](Classes/imgui/imgui_impl_glfw_mac.cpp)
